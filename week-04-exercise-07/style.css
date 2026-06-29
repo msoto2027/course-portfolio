@@ -83,3 +83,23 @@ main>p {
     margin-bottom: 0;
     line-height: 1.6;
 }
+
+@media (width>= 480px) {
+    .collection-grid {
+        gap: 32px;
+    }
+
+    .collection-card {
+        flex: 0 0 45%;
+    }
+}
+
+@media (width>= 1024px) {
+    .collection-grid {
+        gap: 40px;
+    }
+
+    .collection-card {
+        flex: 0 0 30%;
+    }
+}
