@@ -1,0 +1,15 @@
+.screenshot-container {
+    margin: 32px 0;
+    padding: 16px;
+    border: 1px solid rgba(0, 0, 0, 1);
+    text-align: center;
+    background-color: #f0f0f0;
+}
+.screenshot-container img {
+    max-width: 180px;
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    border: 1px solid rgba(0, 0, 0, 0.25);
+}
