@@ -87,3 +87,59 @@ button {
     transform: translateY(-4px);
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
+
+.button-03 {
+    background-color: #ff9800;
+    color: #ffffff;
+    padding: 16px 32px;
+    border: 2px solid #ff9800;
+    font-family: Arial, sans-serif;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.button-03:hover {
+    transform: translateX(10px);
+    background-color: #e68900;
+}
+
+.button-04 {
+    background-color: #28a745;
+    color: #ffffff;
+    padding: 16px 32px;
+    border: 2px solid #28a745;
+    font-family: Arial, sans-serif;
+    transition: transform 0.2s ease-in-out, background-color 0.2s ease-in-out;
+}
+
+.button-04:hover {
+    transform: translateY(-8px);
+    background-color: #218838;
+}
+
+.button-05 {
+    background-color: #9c27b0;
+    color: #ffffff;
+    padding: 16px 32px;
+    border: 2px solid #9c27b0;
+    font-family: Arial, sans-serif;
+    transition: transform 0.4s linear, border-color 0.4s linear;
+}
+
+.button-05:hover {
+    transform: rotate(10deg);
+    border-color: #6a1b9a;
+}
+
+.button-06 {
+    background-color: #17a2b8;
+    color: #ffffff;
+    padding: 16px 32px;
+    border: 2px solid #17a2b8;
+    font-family: Arial, sans-serif;
+    transition: box-shadow 0.5s ease, background-color 0.5s ease;
+}
+
+.button-06:hover {
+    background-color: #138496;
+    box-shadow: 0 0 15px rgba(23, 162, 184, 0.8);
+}
