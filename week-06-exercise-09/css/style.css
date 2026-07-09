@@ -92,16 +92,18 @@ code {
 .nav-simple a {
   display: block;
   padding: 8px 16px;
-  color: #0066CC;
+  color: #6a4c93;
   text-decoration: none;
-  background-color: #fafafa;
-  border: 1px solid rgba(0, 0, 0, 0.25);
-  transition: background-color 0.3s ease, color 0.3s ease;
+  background: linear-gradient(135deg, #f8f3ff 0%, #efe5ff 100%);
+  border: 1px solid #d8c7f0;
+  border-radius: 8px;
+  transition: background-color 0.3s ease, color 0.3s ease, transform 0.25s ease;
 }
 
 .nav-simple a:hover {
-  background-color: #0066CC;
+  background-color: #6a4c93;
   color: #ffffff;
+  transform: translateX(2px);
 }
 
 .nav-simple+main {
@@ -113,9 +115,9 @@ code {
   top: 0;
   left: 0;
   right: 0;
-  background-color: #333333;
+  background: linear-gradient(135deg, #6a4c93 0%, #8b73a8 100%);
   padding: 0 32px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 12px rgba(107, 83, 147, 0.2);
   z-index: 1000;
 }
 
@@ -136,26 +138,68 @@ code {
   padding: 16px 0;
   color: #ffffff;
   text-decoration: none;
-  transition: color 0.3s ease;
+  transition: color 0.3s ease, transform 0.25s ease;
 }
 
 .nav-horizontal a:hover {
-  color: #0066CC;
+  color: #ffe066;
+  transform: translateY(-1px);
 }
 
 .nav-horizontal+main {
   margin-top: 80px;
 }
 
-.nav-custom {}
+.nav-custom {
+  position: fixed;
+  top: 24px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: min(90%, 720px);
+  background: linear-gradient(135deg, #f8f3ff 0%, #efe5ff 100%);
+  border: 1px solid #d8c7f0;
+  border-radius: 999px;
+  box-shadow: 0 8px 24px rgba(107, 83, 147, 0.16);
+  padding: 8px 12px;
+  z-index: 1000;
+}
 
-.nav-custom ul {}
+.nav-custom ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 8px;
+}
 
-.nav-custom li {}
+.nav-custom li {
+  margin-bottom: 0;
+}
 
-.nav-custom a {}
+.nav-custom a {
+  display: inline-block;
+  padding: 10px 18px;
+  color: #6a4c93;
+  text-decoration: none;
+  border-radius: 999px;
+  font-size: 0.95rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  transition: background-color 0.25s ease, color 0.25s ease, transform 0.25s ease;
+}
 
-.nav-custom a:hover {}
+.nav-custom a:hover {
+  background-color: #6a4c93;
+  color: #ffffff;
+  transform: translateY(-1px);
+}
+
+.nav-custom+main {
+  margin-top: 120px;
+}
 
 @media (width >=480px) {}
 
