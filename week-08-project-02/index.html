@@ -3,11 +3,78 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Example Project 00</title>
+        <title>Marisol Soto | Personal Portfolio</title>
+        <meta name="description" content="Personal portfolio highlighting web development, design, and creative projects." />
+        <link rel="stylesheet" href="style.css" />
     </head>
     <body>
-        <h1>Example Project 00</h1>
-        <p>This is an example project.</p>
-        <a href="../index.html">Back to Homepage</a>
+        <header class="hero">
+            <nav class="top-nav">
+                <a class="brand" href="index.html">Marisol Soto</a>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="../index.html">Course Portfolio</a></li>
+                </ul>
+            </nav>
+
+            <div class="hero-content" id="home">
+                <span class="eyebrow">Front-End Developer & Designer</span>
+                <h1>I build thoughtful websites that feel modern and memorable.</h1>
+                <p>I’m a creative developer who loves turning ideas into polished digital experiences with clean code and strong visual storytelling.</p>
+                <div class="hero-actions">
+                    <a class="btn btn-primary" href="projects.html">View Projects</a>
+                    <a class="btn btn-secondary" href="contact.html">Get in Touch</a>
+                </div>
+            </div>
+        </header>
+
+        <main>
+            <section class="section" id="about">
+                <h2>About Me</h2>
+                <p>I’m currently growing my skills in web design and development through hands-on projects and coursework. My focus is on creating accessible, responsive websites that balance strong visuals with smooth user experience.</p>
+            </section>
+
+            <section class="section" id="skills">
+                <h2>Skills</h2>
+                <div class="skill-grid">
+                    <div class="skill-card">HTML & Semantic Structure</div>
+                    <div class="skill-card">CSS & Responsive Layouts</div>
+                    <div class="skill-card">JavaScript Basics</div>
+                    <div class="skill-card">UI/UX Thinking</div>
+                    <div class="skill-card">Content Strategy</div>
+                </div>
+            </section>
+
+            <section class="section" id="projects">
+                <h2>Featured Projects</h2>
+                <div class="project-grid">
+                    <article class="project-card">
+                        <h3>Interactive Landing Page</h3>
+                        <p>A polished launch page built to highlight a product with strong visual hierarchy.</p>
+                    </article>
+                    <article class="project-card">
+                        <h3>Portfolio Website</h3>
+                        <p>A personal site designed to present work clearly and make a strong first impression.</p>
+                    </article>
+                    <article class="project-card">
+                        <h3>Creative Gallery</h3>
+                        <p>A responsive gallery project with thoughtful layout and clean navigation.</p>
+                    </article>
+                </div>
+            </section>
+
+            <section class="section contact" id="contact">
+                <h2>Let’s Work Together</h2>
+                <p>Feel free to reach out if you’d like to collaborate or discuss a new project.</p>
+                <a class="btn btn-primary" href="mailto:marisol@example.com">Email Me</a>
+            </section>
+        </main>
+
+        <footer>
+            <p>© 2026 Marisol Soto • Built for CMPA 3304</p>
+        </footer>
     </body>
 </html>
